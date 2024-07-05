@@ -92,6 +92,7 @@ function App() {
 
   const getForecastByCoordinates = async (latitude, longitude) => {
     const apiKey = process.env.API_KEY;  // Replace with your RapidAPI key
+    console.log(apiKey.length)
     const apiUrl = `https://open-weather13.p.rapidapi.com/city/fivedaysforcast/${latitude}/${longitude}&units=metric`;
 
     try {
